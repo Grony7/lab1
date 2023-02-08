@@ -131,7 +131,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  columns: 300px 300px 300px;
   column-gap: 20px;
   grid-column: 1 / -1;
   border-bottom: 1px solid #ff4500;
@@ -349,6 +348,16 @@ a {
   flex-grow: 1;
   outline: none;
   background-color: transparent;
+}
+
+.form__input:hover,
+.form__input:focus {
+  border-color: #ff4500;
+}
+
+.form__input:hover + .form__label,
+.form__input:focus + .form__label {
+  color: #ff4500;
 }
 
 .form__textarea {
